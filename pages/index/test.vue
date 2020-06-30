@@ -1,9 +1,88 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+	<view>
+		<title-view bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">布局</block></title-view>
 		<view class="text-area">
 			<text class="title" @tap="testPage">{{title}}</text>
 		</view>
+		<view class="cu-bar bg-white solid-bottom">
+			<view class='action'>
+				<text class='cuIcon-title text-blue'></text>标签形状
+			</view>
+		</view>
+		<view class="padding bg-white solid-bottom">
+			<view class='cu-tag'>默认</view>
+			<view class='cu-tag round'>椭圆</view>
+			<view class='cu-tag radius'>圆角</view>
+		</view>
+		<view class="cu-bar bg-white margin-top">
+			<view class='action'>
+				<text class='cuIcon-title text-blue'></text>胶囊样式
+			</view>
+		</view>
+		<view class="padding">
+			<view class="cu-capsule">
+				<view class='cu-tag bg-red'>
+					<text class='cuIcon-likefill'></text>
+				</view>
+				<view class="cu-tag line-red">
+					12
+				</view>
+			</view>
+			<view class="cu-capsule round">
+				<view class='cu-tag bg-blue '>
+					<text class='cuIcon-likefill'></text>
+				</view>
+				<view class="cu-tag line-blue">
+					23
+				</view>
+			</view>
+			<view class="cu-capsule round">
+				<view class='cu-tag bg-blue '>
+					说明
+				</view>
+				<view class="cu-tag line-blue">
+					123
+				</view>
+			</view>
+			<view class="cu-capsule radius">
+				<view class='cu-tag bg-grey '>
+					<text class='cuIcon-likefill'></text>
+				</view>
+				<view class="cu-tag line-grey">
+					23
+				</view>
+			</view>
+			<view class="cu-capsule radius">
+				<view class='cu-tag bg-brown sm'>
+					<text class='cuIcon-likefill'></text>
+				</view>
+				<view class="cu-tag line-brown sm">
+					23
+				</view>
+			</view>
+		</view>
+		<view class="cu-bar margin-top bg-white">
+			<view class="action">
+				<text class="cuIcon-title text-blue"></text>块状按钮
+			</view>
+		</view>
+		<view class="padding flex flex-direction">
+			<button class="cu-btn bg-grey lg">玄灰</button>
+			<button class="cu-btn bg-red margin-tb-sm lg">嫣红</button>
+		</view>
+		<view class="cu-bar margin-top bg-white">
+			<view class="action">
+				<text class="cuIcon-title text-blue"></text>按钮加图标
+			</view>
+		</view>
+		<view class="padding-xl">
+			<button class="cu-btn block line-orange lg">
+				<text class="cuIcon-upload"></text> 图标</button>
+			<button class="cu-btn block bg-blue margin-tb-sm lg">
+				<text class="cuIcon-loading2 cuIconfont-spin"></text> 加载</button>
+			<button class="cu-btn block bg-black margin-tb-sm lg" loading> 原生加载</button>
+		</view>
+		
 	</view>
 </template>
 

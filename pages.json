@@ -11,18 +11,22 @@
 			"style": {
 				"navigationBarTitleText": "uni-test"
 			}
+		},
+		{
+			"path": "pages/index/layout",
+			"style": {
+				"navigationBarTitleText": "uni-layout"
+			}
 		}
 	],
 	"globalStyle": {
 		"pageOrientation": "portrait",
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "Hello uniapp",
-		"navigationBarBackgroundColor": "#007AFF",
+		"navigationBarBackgroundColor": "#0081ff",
 		"backgroundColor": "#F8F8F8",
 		"backgroundColorTop": "#F4F5F6",
-		"backgroundColorBottom": "#F4F5F6",
-		"mp-360": {
-			"navigationStyle": "custom"
-		}
+		"backgroundColorBottom": "#F4F5F6",		
+		"navigationStyle": "custom"
 	}
 }

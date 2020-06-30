@@ -27,9 +27,6 @@ var checker = {
 	},
 	isEmail: function(check){
 		return true;
-	},
-	isEmail: function(check){
-		return true;
-	},
+	}
 }
 module.exports = checker;

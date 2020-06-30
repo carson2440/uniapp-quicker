@@ -125,7 +125,7 @@ pullScroll.refresh(); // 如有pullDown，则自动触发下拉刷新，如有pu
 
 #### template
 ``` html
-<s-pull-scroll ref="pullScroll" :pullDown="pullDown" :pullUp="loadData">
+<pull-scroll-view ref="pullScroll" :pullDown="pullDown" :pullUp="loadData">
   <ul>
     <li
       v-for="(item,index) of list"
@@ -133,7 +133,7 @@ pullScroll.refresh(); // 如有pullDown，则自动触发下拉刷新，如有pu
       style="font-size:30rpx;padding:40rpx;text-align:center;border-bottom:1px solid #aaa"
     >{{item}}</li>
   </ul>
-</s-pull-scroll>
+</pull-scroll-view>
 ```
 
 #### script

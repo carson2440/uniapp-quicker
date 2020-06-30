@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import App from './App'
 
+//全局自定义标题栏
+import titleView from './components/custom-title-view/title-view.vue'
+Vue.component('title-view',titleView)
+
 import apiConfig from '@/common/api-configer.js'
 import appChecker from '@/common/app-checker.js'
 

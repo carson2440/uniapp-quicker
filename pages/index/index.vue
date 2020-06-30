@@ -1,12 +1,22 @@
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
+		<view class="cuIcon-title radius bg-blue padding-sm" >开发者</view>
 		<view class="text-area">
-			<text class="title" @tap="login">{{title}}</text>
+			<text class="cu-btn radius bg-cyan margin-top" @tap="login">点我跳转</text>
+		</view>
+		<view class="text-area">
+			<text class="cu-btn radius bg-cyan margin-top" @tap="golayout">点我跳转去布局</text>
 		</view>
 		<view>
 		    <text class="hello-text">uni-app内置组件，展示样式仅供参考，文档详见：https://uniapp.dcloud.io/component/</text>
 		</view>
+		<view class="padding">
+			<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg)"></view>
+			<view class="cu-avatar radius margin-left" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+		</view>
+		
+		
 	</view>
 </template>
 
@@ -60,6 +70,11 @@
 				// 	console.log("page:" + JSON.stringify(error));
 				// });
 			},
+			golayout(){
+				uni.navigateTo({
+					url:'/pages/index/layout'
+				})
+			},
 			acceptParamMethod(param){
 				console.log("accept data:"+param);
 			},			
@@ -69,6 +84,18 @@
 </script>
 
 <style>
+	page {
+		padding-top: 45px;
+	}
+	.nav-title {
+		font-size: 32upx;
+		font-weight: 300;
+	}
+	
+	.nav-title::first-letter {
+		font-size: 40upx;
+		margin-right: 4upx;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
