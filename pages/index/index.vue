@@ -16,11 +16,15 @@
 			<view class="cu-avatar radius margin-left" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
 		</view>
 		
-		
+		<text class="title">拍照和相册</text>
+		<quick-image @selectResult="ceshiChooseSuccess" :formData="waterData"></quick-image>
+		<text class="title">相册</text>
+		<quick-image :size="96" :max="6" :mode="'circle'" :sourceType="['album']" @selectResult="ceshiChooseSuccess"></quick-image>
 	</view>
 </template>
 
 <script>
+	import quickImage from '@/components/quick-image/quick-image.vue'
 	var dateUtils = require('@/common/utils.js').dateUtils;
 	var utils = require('@/common/utils.js'); //导入的是对象
 	export default {
@@ -30,6 +34,13 @@
 				user: {
 					name: 'carson2440',
 					mobile: '18140092007'
+				},
+				waterData:{
+					"project":"这里是项目名称辣椒粉拉风拉夫,carson2440-carson",
+					"devCompany":"这里是施工单位，深圳前海好工易网络科技有限公司",
+					"author":"carson2440-岗位",
+					"type":"安全问题",
+					"address":"三栋一单元5F",
 				}
 			}
 		},
