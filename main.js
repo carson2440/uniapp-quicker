@@ -11,7 +11,7 @@ import appHttps from '@/common/app-https.js'
 import appUtils from '@/common/app-utils.js'
 
 Vue.prototype.$http = appHttps;
-Vue.prototype.$utils = appUtils;
+Vue.prototype.$util = appUtils;
 
 Vue.config.productionTip = false
 App.mpType = 'app'

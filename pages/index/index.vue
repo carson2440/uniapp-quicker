@@ -53,15 +53,18 @@
 			console.log("formate time：" + form);
 			console.log("hum:" + hum);
 			console.log("parse:" + parse);
-			this.$msg.showToast(dateUtils.humanize(7000))
-			console.log("has name:" + this.$app.hasKey(this.user, "name"));
-			console.log("has age:" + this.$app.hasKey(this.user, "age"));
-			console.log("is number: "+this.$app.isNumber(10.5));
+			this.$util.showToast(dateUtils.humanize(7000))
+			console.log("has name:" + this.$util.hasKey(this.user, "name"));
+			console.log("has age:" + this.$util.hasKey(this.user, "age"));
+			console.log("is number: "+this.$util.isNumber(10.5));
 			// uni.showModal({
 			// 	title: '保存成功',
 			// 	content: '下次进入页面时，此文件仍可用',
 			// 	showCancel: false
 			// });
+			let test = "hello carson";
+			test = test.substring(0,20);
+			console.log("==",test);
 
 		},
 		methods: {
